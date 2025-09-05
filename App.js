@@ -19,7 +19,8 @@ export default function app() {
     </SafeAreaView>
   );
 }
-function header({ pagina, setpagina }) {
+//skate é tudo
+function Header({ pagina, setpagina }) {
   return (
     <View style={styles.header} >
       <Texte styles={style.headertitle}>BRD TRANSPORTES</Texte>
@@ -110,10 +111,82 @@ function Contato() {
     </View>
   );
 }
-function Footer () {
-  return(
-  <View style={styles.footer}>
-    <Text style={{color: 'white'}}>2025 minha Empresa. Todos os direitos reservados</Text>
-  </View>
-);
+function Footer() {
+  return (
+    <View style={styles.footer}>
+      <Text style={{ color: 'white' }}>2025 minha Empresa. Todos os direitos reservados</Text>
+    </View>
+  );
+
 }
+const styles = StylesSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#f4f7fa'
+  },
+  header: {
+    backgroundColor: '#004080',
+    padding: 40,
+    alingContent: 'center',
+    alingIntems: 'center',
+  },
+  headerTitle: {
+    color: 'white',
+    fontSize: 24,
+    fontWeight: 'bold',
+    marginBottom: 12
+  },
+  nav: {
+    flexDirection: 'rown',
+    justifyCONtent: 'space-around'
+  },
+  navButton: {
+    paddingVertical: 8,
+    paddingHorizontal: 12,
+    borderRadius: 4
+  },
+  navButtonActive: {
+    backgroundColo: '0066cc'
+  },
+  navButtonText: {
+    color: 'white',
+    fontWeight: 'bold'
+  },
+  content: {
+    padding: 20,
+    flexGrow: 1
+  },
+  section: {
+    marginBottom: 20
+  },
+  title: {
+    fontSize: 20,
+    fontWeight: 'bold',
+    marginBottom: 10
+  },
+  input: {
+    backgroundColor: 'white',
+    borderColor: '#ccc',
+    borderWeight: 1,
+    paddingHorizontal: 10,
+    paddingVertical: 8,
+    borderRadius: 4,
+    marginBottom: 15,
+  },
+  button: {
+    backgroundColor: '#00480',
+    paddingVertical: 12,
+    borderRadius: 6,
+    alignItems: 'center',
+  },
+  buttonText: {
+    color: 'white',
+    fontWeight: 'bold',
+    fontSize: 16
+  },
+  footer: {
+    backgroundColor: '#00264d',
+    padding: 15,
+    alignItems: 'center'
+  },
+});
